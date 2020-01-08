@@ -19,8 +19,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-Ph-BDP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Scores: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Xz-Ez-kU3">
-                                        <rect key="frame" x="107" y="554" width="136" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Scores: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Xz-Ez-kU3" userLabel="Your Scores:" customClass="CustomLbl" customModule="Random_Game" customModuleProvider="target">
+                                        <rect key="frame" x="59" y="597" width="257" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -30,25 +30,25 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.40488548801369861" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdT-dK-xP1">
+                                <rect key="frame" x="87.5" y="124" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAp-LI-7S8"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAI-jy-Emy">
-                                <rect key="frame" x="-12.5" y="354" width="400" height="200"/>
+                                <rect key="frame" x="87.5" y="254" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pgp-8Q-7p5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwS-kj-C8F">
-                                <rect key="frame" x="-12.5" y="584" width="400" height="200"/>
+                                <rect key="frame" x="87.5" y="384" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a7F-II-tDl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdT-dK-xP1">
-                                <rect key="frame" x="-12.5" y="124" width="400" height="200"/>
-                                <state key="normal" image="us"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAp-LI-7S8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,11 +72,12 @@
                         <outlet property="button1" destination="fdT-dK-xP1" id="2ag-5B-Y9h"/>
                         <outlet property="button2" destination="XAI-jy-Emy" id="4M4-fw-QmW"/>
                         <outlet property="button3" destination="JwS-kj-C8F" id="f06-7b-Zj0"/>
+                        <outlet property="scoreLabl" destination="4Xz-Ez-kU3" id="HJ1-09-e7o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="-671"/>
+            <point key="canvasLocation" x="848.79999999999995" y="-671.51424287856082"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y6O-uq-Dsd">

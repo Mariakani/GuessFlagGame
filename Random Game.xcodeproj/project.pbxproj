@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C21501F23C5759500B48C87 /* CustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21501E23C5759500B48C87 /* CustomBtn.swift */; };
+		0C21502123C5784700B48C87 /* CustomLbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21502023C5784700B48C87 /* CustomLbl.swift */; };
 		5814D05322445DE300AD07E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5814D05222445DE300AD07E1 /* AppDelegate.swift */; };
 		5814D05522445DE300AD07E1 /* GuessFlagGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5814D05422445DE300AD07E1 /* GuessFlagGameVC.swift */; };
 		5814D05822445DE300AD07E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5814D05622445DE300AD07E1 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		0C21501E23C5759500B48C87 /* CustomBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBtn.swift; sourceTree = "<group>"; };
+		0C21502023C5784700B48C87 /* CustomLbl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLbl.swift; sourceTree = "<group>"; };
 		5814D04F22445DE300AD07E1 /* Random Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5814D05222445DE300AD07E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5814D05422445DE300AD07E1 /* GuessFlagGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessFlagGameVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				5814D05222445DE300AD07E1 /* AppDelegate.swift */,
 				5814D05422445DE300AD07E1 /* GuessFlagGameVC.swift */,
 				0C21501E23C5759500B48C87 /* CustomBtn.swift */,
+				0C21502023C5784700B48C87 /* CustomLbl.swift */,
 				5814D05622445DE300AD07E1 /* Main.storyboard */,
 				5814D05922445DE300AD07E1 /* Assets.xcassets */,
 				5814D05B22445DE300AD07E1 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				5814D05522445DE300AD07E1 /* GuessFlagGameVC.swift in Sources */,
 				5814D05322445DE300AD07E1 /* AppDelegate.swift in Sources */,
 				0C21501F23C5759500B48C87 /* CustomBtn.swift in Sources */,
+				0C21502123C5784700B48C87 /* CustomLbl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

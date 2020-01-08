@@ -15,6 +15,9 @@ class GuessFlagGameVC: UIViewController {
     @IBOutlet weak var button2: UIButton!
     
     @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var scoreLabl: UILabel!
+    
+    
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
@@ -37,6 +40,7 @@ class GuessFlagGameVC: UIViewController {
         button1.layer.borderColor = UIColor.lightGray.cgColor
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
+       
     }
     
     func askQuestion(action: UIAlertAction! = nil){
@@ -45,8 +49,8 @@ class GuessFlagGameVC: UIViewController {
         button1.setImage(UIImage(named: countries[0]), for: .normal)
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
-
-        title = "\(countries[correctAnswer].uppercased()):   Score is \(score)"
+        title = "\(countries[correctAnswer].uppercased())"
+        scoreLabl.text = "Your scores: \(score)"
         navigationController?.navigationBar.backgroundColor = UIColor.purple
     }
 
@@ -72,6 +76,7 @@ class GuessFlagGameVC: UIViewController {
             action2.addAction(UIAlertAction(title: "Restart the Gane", style: .cancel, handler: { (UIAlertAction) in
                 self.dismiss(animated: true, completion: {
                 self.restartGame()
+                self.askQuestion()
                 })
             }))
             present(action2, animated: true)
@@ -80,11 +85,6 @@ class GuessFlagGameVC: UIViewController {
     func restartGame(){
         self.score = 0
         self.questionNum = 0
-        if(isRestarted){
-            isRestarted = false
-        }else{
-            isRestarted = true
-        }
     }
 }
 
